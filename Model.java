@@ -3,10 +3,14 @@ public class Model
 {
 	int counter = 0;
 
-	Integer counter()
+	Integer getCounter()
+	{
+		return this.counter;
+	}
+	
+	void incCounter()
 	{
 		this.counter++;
-		return this.counter;
 	}
 	
 }

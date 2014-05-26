@@ -16,7 +16,6 @@ public class View extends JFrame
 	JLabel jl1;
 	GridBagConstraints c;
 	
-	
 	public View() 
 	{	
 		c = new GridBagConstraints();		

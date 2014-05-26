@@ -18,7 +18,8 @@ public class Controller
 	int inc()
 	{	
 		mRef = new Model();
-		return mRef.counter();
+		mRef.incCounter();
+		return mRef.getCounter();
 	}
 
 
@@ -29,7 +30,8 @@ public class Controller
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				vRef.setText(mRef.counter().toString());
+				vRef.setText(mRef.getCounter().toString());
+				mRef.incCounter();
 			}
 		};
 		vRef.getButton().addActionListener(a);
