@@ -6,7 +6,6 @@ public class Controller
 {
 	private Model mRef;
 	private View vRef;
-	private ActionListener a;
 	
 	public Controller(Model m, View v) 
 	{
@@ -26,15 +25,15 @@ public class Controller
 	
 	public void buttonClicked() 
 	{
-		a = new ActionListener() 
+	
+		vRef.getButton().addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
 			{
 				vRef.setText(mRef.getCounter().toString());
 				mRef.incCounter();
 			}
-		};
-		vRef.getButton().addActionListener(a);
+		});
 	}
 
 
