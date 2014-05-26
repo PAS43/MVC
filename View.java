@@ -15,9 +15,7 @@ public class View extends JFrame
 	JButton jb1;
 	JLabel jl1;
 	GridBagConstraints c;
-	Controller con;	
-	Model m;
-	ActionEvent q;
+	
 	
 	public View() 
 	{	
